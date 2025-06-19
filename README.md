@@ -1,6 +1,9 @@
 # GymAI: Smart Equipment Scanner & AI Workout Planner
 
 **GymAI** is an AI-powered fitness assistant that scans gym equipment from images or videos and generates personalized workout plans using cutting-edge GenAI technologies like **Clarifai GPT-4o** and **OpenCV**.
+It was built to make the gym less intimidating and more accessible, especially for beginners, solo gym-goers, or anyone trying to get back into fitness. Many people walk into the gym unsure about how to use the equipment, what exercises target their goals, or how to plan an effective workout routine. GymAI aims to bridge that gap with the power of generative AI. Users can upload an image or video of any gym machine, and GymAI identifies the equipment, explains which muscles it targets, suggests related exercises, and links to tutorials for proper form. It also includes a personalized AI workout planner and logger that generates tailored routines based on fitness goals, duration, and level of experience.
+
+Whether you're looking to lose weight, tone up, or build strength, GymAI helps demystify the gym and guides you with structured, AI-curated plans—right from your browser.
 
 > Scan. Learn. Plan. Log. Chat.
 
@@ -75,20 +78,20 @@ And watch GymAI generate your full workout routine!
 ## 🚀 Setup
 
 1. **Clone the repo**  
-`git clone https://github.com/pkumsi/gymai-scanner.git
-cd gymai-scanner`
+`git clone https://github.com/pkumsi/gymai-scanner.git`
+`cd gymai-scanner`
 
 2. **Backend setup**
-`cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python app.py`
+`cd backend`
+`python -m venv venv`
+`source venv/bin/activate`
+`pip install -r requirements.txt`
+`python app.py`
 
 3. **Frontend setup**
-`cd ../frontend
-npm install
-npm start`
+`cd ../frontend`
+`npm install`
+`npm start`
 
 4. **Visit**
 - Go to http://localhost:3000 and start uploading
