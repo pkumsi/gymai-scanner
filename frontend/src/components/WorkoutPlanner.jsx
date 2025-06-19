@@ -23,19 +23,24 @@ export default function WorkoutPlanner() {
       };
       const res = await API.post('/plan', payload);
       // if backend returned unstructured raw text:
-      if (res.data.raw_plan) {
-        setPlan({ raw: res.data.raw_plan });
-      } else {
-        setPlan(res.data);
-      }
-    } catch (err) {
-      alert('Error: ' + (err.response?.data?.error || err.message));
-    } finally {
-      setLoading(false);
-    }
-  };
+if (res.data.raw_plan) {
+  try {
+    const parsed = JSON.parse(res.data.raw_plan);
+    setPlan(parsed);
+  } catch {
+    setPlan({ raw: res.data.raw_plan }); // fallback to raw view
+  }
+} else {
+    setPlan(res.data);
+  }
+} catch (err) {
+  alert('Error: ' + (err.response?.data?.error || err.message));
+} finally {
+  setLoading(false);
+}
+};
 
-  // show form if no plan yet
+// show form if no plan yet
   if (!plan) {
     return (
       <div style={styles.container}>

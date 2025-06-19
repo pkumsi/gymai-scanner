@@ -17,7 +17,7 @@ function App() {
 
       <div style={{ padding: '1rem' }}>
         <Routes>
-          <Route path="/"      element={<h1>Welcome to ShariraAI!</h1>} />
+          <Route path="/"      element={<h1>Welcome to GymAI!</h1>} />
           <Route path="/scan"  element={<GymScanner />} />
           <Route path="/plan"  element={<WorkoutPlanner />} />
           <Route path="/chat"  element={<ChatBot />} />

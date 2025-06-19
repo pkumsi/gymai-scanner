@@ -7,7 +7,6 @@ from routes.gym_scanner import gym_scanner_bp
 from routes.workout_planner import planner_bp
 from routes.chat_bot import chat_bp
 from routes.workout_logger import logger_bp
-from routes.buddy_connector import buddy_bp
 
 # Create Flask app instance
 app = Flask(__name__)
@@ -21,7 +20,6 @@ app.register_blueprint(gym_scanner_bp, url_prefix='/api')
 app.register_blueprint(planner_bp, url_prefix='/api')
 app.register_blueprint(chat_bp, url_prefix='/api')
 app.register_blueprint(logger_bp, url_prefix='/api')
-app.register_blueprint(buddy_bp, url_prefix='/api')
 
 # Start server
 if __name__ == '__main__':
