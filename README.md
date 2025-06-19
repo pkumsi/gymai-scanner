@@ -1,7 +1,12 @@
 # GymAI: Smart Equipment Scanner & AI Workout Planner
 
 **GymAI** is an AI-powered fitness assistant that scans gym equipment from images or videos and generates personalized workout plans using cutting-edge GenAI technologies like **Clarifai GPT-4o** and **OpenCV**.
-It was built to make the gym less intimidating and more accessible, especially for beginners, solo gym-goers, or anyone trying to get back into fitness. Many people walk into the gym unsure about how to use the equipment, what exercises target their goals, or how to plan an effective workout routine. GymAI aims to bridge that gap with the power of generative AI. Users can upload an image or video of any gym machine, and GymAI identifies the equipment, explains which muscles it targets, suggests related exercises, and links to tutorials for proper form. It also includes a personalized AI workout planner and logger that generates tailored routines based on fitness goals, duration, and level of experience.
+
+It was built to make the gym less intimidating and more accessible, especially for beginners, solo gym-goers, or anyone trying to get back into fitness. 
+
+Many people walk into the gym unsure about how to use the equipment, what exercises target their goals, or how to plan an effective workout routine. GymAI aims to bridge that gap with the power of generative AI. Users can upload an image or video of any gym machine, and GymAI identifies the equipment, explains which muscles it targets, suggests related exercises, and links to tutorials for proper form. 
+
+It also includes a personalized AI workout planner and logger that generates tailored routines based on fitness goals, duration, and level of experience.
 
 Whether you're looking to lose weight, tone up, or build strength, GymAI helps demystify the gym and guides you with structured, AI-curated plans—right from your browser.
 
